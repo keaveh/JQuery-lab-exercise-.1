@@ -3,5 +3,6 @@ $(document).ready(function () {
   // why it does not working ???The code above
   $("my-color-text").removeClass();
   // not working ...
-  
+  $("p").removeClass();
+  //not working...
 });
