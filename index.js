@@ -1,11 +1,21 @@
 $(document).ready(function () {
-  $(".col-6 question-content").addClass(".my-bold-text");
-  // why it does not working ???The code above
-  $("my-color-text").removeClass();
-  // not working ...
-  $(".col-6 question-content").removeClass();
+  $(".col-6 question-content").children(1).addClass("my-bold-text");
+
+  //  Im Add an Id for catch the text
+
+  $("p").removeClass("my-color-text");
+
+  // its  working ...
+
+  $(".remove").removeClass();
   //not working...
-  $(".card-text").replaceWith(" I'm new :D ");
+  //   $(".card-text").replaceWith(" I'm new :D ");
   //
-  $("button").click(console.log());
+  function Show() {
+    $("button").addClass("Show me in console!");
+  }
+  $("button").click(Show);
+  //
 });
+
+// $("#MyText").addClass("my-bold-text");
