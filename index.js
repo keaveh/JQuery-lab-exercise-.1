@@ -1,21 +1,19 @@
 $(document).ready(function () {
-  $(".col-6 question-content").children(1).addClass("my-bold-text");
-
-  //  Im Add an Id for catch the text
-
-  $("p").removeClass("my-color-text");
-
-  // its  working ...
-
-  $(".remove").removeClass();
-  //not working...
-  //   $(".card-text").replaceWith(" I'm new :D ");
-  //
-  function Show() {
-    $("button").addClass("Show me in console!");
-  }
-  $("button").click(Show);
-  //
+  //1
+  $(".col-6 question-content").addClass("my-bold-text");
+  //2
+  $(".my-color-text").removeClass();
+  //3
+  $("p").remove(".removee");
+  //4
+  $("#change").replaceWith(" I'm new :D ");
+  //5
+  $("button").on("click", function () {
+    console.log("Hi");
+  });
+  //6
+  $("#btn").on("click" ,function () {
+   console.log();
+  });
 });
-
-// $("#MyText").addClass("my-bold-text");
+/////////////////////////6? سوال ۶ را متوجه نشده ام
